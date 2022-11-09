@@ -2,10 +2,10 @@
 const [sneakOpen, setSneakOpen] = useState();
 const [message, setMessage] = useState();
 const [type, setType] = useState();
-const [trigger, setTrigger] = useState(false)
+const [trigger, setTrigger] = useState(false) // Add setTrigger(true) to every click action.
 
-//.................Handling Error..............
-const { response } = useSelector(state => ({ ...state.qrError }));
+//................. Handling Error..............
+const { response } = useSelector(state => ({ ...state.qrError })); // Get this form redux stage.
 
 useEffect(() => {
     if (trigger) {
