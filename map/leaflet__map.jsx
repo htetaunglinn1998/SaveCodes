@@ -11,7 +11,6 @@ import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import SearchField from './leaflet_search';
 
-
 const AssetMap = ({ newData, setNewData }) => {
 
   const center = { lat: 16.806463158856577, lng: 96.15468108141746 }
