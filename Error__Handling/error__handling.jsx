@@ -7,6 +7,8 @@ const [trigger, setTrigger] = useState(false) // Add setTrigger(true) to every c
 //................. Handling Error..............
 const { response } = useSelector(state => ({ ...state.qrError })); // Get this form redux stage.
 
+
+
 useEffect(() => {
     if (trigger) {
         if (response?.success === true) {
